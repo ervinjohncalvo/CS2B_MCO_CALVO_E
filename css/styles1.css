@@ -1,0 +1,153 @@
+* {
+  text-decoration: none;
+  text-align: center;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+/**/
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgb(85, 163, 232);
+  font-family: monospace;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/**/
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.heroheader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 100%;
+}
+/**/
+.calvo-header, .apolonio-header {
+  background: #f4f4f4;
+  border: 2px solid black;  
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/*Our photo*/   
+.calvo-header img,
+.apolonio-header img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}   
+/*The text for our About me*/
+.Aboutme {
+  font-size: 1rem;
+  color: #222;
+  margin-top: 8px;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 24px;
+}
+/*Our main Section*/
+main {
+  width: 80%;
+  padding: 20px;
+  background-color: #518ed0;
+  font-size: larger;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+/*Our css on hobbies and Activity*/ 
+.hobbies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.hobby-item {
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobby-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.hobbies-description {
+  color: #222;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+/*Our Aside Section*/
+aside {
+  width: 20%;
+  min-width: 180px;
+  max-width: 260px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+/*Our Footer Section*/
+.footer {
+  background: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 32px 0 16px 0;
+  margin-top: 40px;
+}
+.footer-contact form {
+  margin: 0 auto 16px auto;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contact button {
+  background: #fff;
+  color: #0056b3;
+  border: none;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}

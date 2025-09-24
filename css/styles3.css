@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;  
+  padding: 0;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0056b3;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  margin-top: 0%;
+}
+.navbar a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+.navbar a:hover {
+  background: #003d80;
+} 
+.gallery-header {
+  text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+.gallery-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 15px;
+  /* Removed invalid padding: auto; */
+  /* Removed invalid overflow: ; */
+}
+.gallery-item img {
+  width: 50%;
+  height: 150px; /* or use 50% if you want relative sizing */
+  object-fit: cover;
+  border-radius: 4px;
+}
+.gallery-item .price {
+  font-weight: bold;
+  color: #222;
+  margin: 8px 0;
+}
+.gallery-item button {
+  background: rgb(36, 36, 141);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.gallery-item button:hover {
+  background: #0056b3;
+}
+
+
+
+/*Our Footer Section*/
+.footer {
+  background: #0056b3;
+  color: #fff;
+  text-align: center;
+  padding: 32px 0 16px 0;
+  margin-top: 40px;
+}
+.footer-contact form {
+  margin: 0 auto 16px auto;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-contact button {
+  background: #fff;
+  color: #0056b3;
+  border: none;
+  padding: 8px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
