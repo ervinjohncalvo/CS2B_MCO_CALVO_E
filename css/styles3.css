@@ -3,6 +3,11 @@ body {
   line-height: 1.6;
   margin: 0;  
   padding: 0;
+  background-image: url('../img/background.jpg  ');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 .navbar {
   position: sticky;
@@ -33,6 +38,15 @@ body {
 .gallery-header {
   text-align: center;
 }
+.gallery-header img {
+  width: 30%;
+  text-align: center;
+}
+.gallery-header h1{
+  color: white;
+  text-align: center;
+  
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -46,12 +60,10 @@ body {
   text-align: center;
   border-radius: 8px;
   margin: 15px;
-  /* Removed invalid padding: auto; */
-  /* Removed invalid overflow: ; */
 }
 .gallery-item img {
   width: 50%;
-  height: 150px; /* or use 50% if you want relative sizing */
+  height: 150px;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -71,9 +83,6 @@ body {
 .gallery-item button:hover {
   background: #0056b3;
 }
-
-
-
 /*Our Footer Section*/
 .footer {
   background: #0056b3;
